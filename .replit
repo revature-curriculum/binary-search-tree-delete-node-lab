@@ -2,7 +2,7 @@ compile = "javac -classpath .:target/dependency/* -d . $(find . -type f -name '*
 run = ["java", "-classpath", ".:target/dependency/*", "BinarySearchTreeDeleteNode"]
 
 entrypoint = "src/main/BinarySearchTreeDeleteNode.java"
-hidden = ["**/**/*.class"]
+hidden = ["**/main/*.class"]
 
 [packager]
 language = "java"
@@ -11,7 +11,7 @@ language = "java"
 packageSearch = true
 
 [languages.java]
-pattern = "**/**/*.java"
+pattern = "**/main/*.java"
 
 [languages.java.languageServer]
 start = ["jdt-language-server"]
